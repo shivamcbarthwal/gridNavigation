@@ -1,2 +1,2 @@
-3,0
-S S S S E E E E E E N N
+6,7
+W W N W W W S S W

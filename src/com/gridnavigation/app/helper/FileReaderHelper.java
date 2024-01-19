@@ -21,7 +21,7 @@ public class FileReaderHelper {
      */
     public static Position readInitialPositionFromFile(String filePath) {
         try {
-            Scanner scanner = new Scanner(new File(filePath));
+            Scanner scanner = new Scanner(new File(filePath), "UTF-8");
             String line = scanner.nextLine();
             scanner.close();
 
@@ -63,7 +63,7 @@ public class FileReaderHelper {
      */
     public static List<Movement> readMovementsFromFile(String filePath) throws InvalidMovementFormatException {
         try {
-            Scanner scanner = new Scanner(new File(filePath));
+            Scanner scanner = new Scanner(new File(filePath), "UTF-8");
             scanner.nextLine(); // Skip the first line
             String movements = scanner.nextLine();
             scanner.close();
